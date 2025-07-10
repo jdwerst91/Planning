@@ -1,0 +1,6 @@
+# Set R and RMarkdown as recognized languages
+*.R linguist-language=R
+*.rmd linguist-language=RMarkdown
+
+# Treat everything else as plain text
+* linguist-language=Text
