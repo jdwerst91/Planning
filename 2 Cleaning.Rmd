@@ -13,13 +13,6 @@ output:
 
 -   [Tidyverse Documentation](https://www.tidyverse.org/)
 
--   [O'Reilly Learning
-    Platform](https://databases.lib.wvu.edu/connect/1540334373)
-
-    -   R for Data Science, 2nd Edition
-
-    -   R Programming for Statistics and Data Science
-
 ------------------------------------------------------------------------
 
 ```{r}
@@ -488,5 +481,6 @@ write_csv(sw_df, "starwars_clean.csv")
 ```
 
 <br />
+
 
 ------------------------------------------------------------------------
