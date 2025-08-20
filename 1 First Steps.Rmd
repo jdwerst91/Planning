@@ -98,20 +98,6 @@ saved.
 
 ------------------------------------------------------------------------
 
-**Function: getwd()**
-
-See the current directory you are in.
-
-```{r}
-#| label: getwd function
-#| eval: false
-
-getwd()
-
-```
-
-------------------------------------------------------------------------
-
 **Function: setwd()**
 
 You can set your working directory in RStudio by going to
@@ -132,7 +118,15 @@ the setwd() function*
 #| label: setwd function
 #| eval: false
 
-setwd("C:/Users/Matt/Documents/GitHub/First_steps_r_fall23")
+**Function: getwd()**
+
+See the current directory you are in.
+
+```{r}
+#| label: getwd function
+#| eval: false
+
+getwd()
 
 ```
 
@@ -214,7 +208,7 @@ different tasks like filtering, sorting, or calculation.
 #| label: example function
 #| eval: false
 
-sample(1:5000)
+sample(1:100)
 ```
 
 <br>
@@ -229,11 +223,11 @@ it what to do.
 #| label: example arguments
 #| eval: false
 
-sample(1:5000, size = 50, replace = TRUE)
+sample(1:100, size = 10, replace = TRUE)
 
 # arguments in a function have an order. Entering information in the order will allow you to skip the argument name
 
-sample(1:5000, 50, TRUE)
+sample(1:100, 10, TRUE)
 
 ```
 
@@ -526,29 +520,6 @@ write.csv(starWars.data, "starwars.csv")
 
 ------------------------------------------------------------------------
 
-<br>
-
-## Read a Data Frame into R
-
-load data from a file in your working directory using the **read_csv(
-)** function from tidyverse. There is also the **read.csv( )** function
-in base R.
-
-<br>
-
-*read_csv("name of file.extension)*
-
-<br>
-
-```{r}
-#| label: read data
-#| eval: false
-
-fight_songs <- read_csv("fight-songs.csv")
-
-```
-
-------------------------------------------------------------------------
 
 ## Explore the Data Frame
 
@@ -566,7 +537,7 @@ view the full data frame
 #| label: view
 #| eval: false
 
-view(fight_songs)
+view(starWars.data)
 
 ```
 
@@ -584,21 +555,21 @@ individual descriptive statistics
 #| label: descriptive statistics
 #| eval: false
 
-# number of times the word "fight" is used in all songs
+# the total box office revenue
 
-sum(fight_songs$number_fights)
+sum(starWars.data$box.office.mil)
 
-# what is the average number of times "fight" is used in all songs
+#the mean box office revenue
 
-mean(fight_songs$number_fights)
+mean(starWars.data$box.office.mil)
 
-# what is the median number of times "fight" is used in all songs
+#what is the median box office revenue
 
-median(fight_songs$number_fights)
+median(starWars.data$box.office.mil)
 
-# what is the standard deviation of times "fight" is used in all songs
+# what is the standard deviation of the box office revenue
 
-sd(fight_songs$number_fights)
+sd(starWars.data$box.office.mil)
 
 
 ```
@@ -607,3 +578,4 @@ sd(fight_songs$number_fights)
 
 
 ------------------------------------------------------------------------
+
