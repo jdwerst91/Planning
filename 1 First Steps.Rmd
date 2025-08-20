@@ -528,19 +528,6 @@ write.csv(starWars.data, "starwars.csv")
 
 <br>
 
-```{r}
-#| label: load tidyverse
-#| eval: false
-
-# if you have not yet loaded tidyverse let's go ahead and do that
-
-library(tidyverse)
-
-
-```
-
-<br>
-
 ## Read a Data Frame into R
 
 load data from a file in your working directory using the **read_csv(
@@ -585,39 +572,6 @@ view(fight_songs)
 
 <br>
 
-### Function: colnames()
-
-view the names of columns/variables
-
-<br>
-
-### Function: glimpse()
-
-view the structure of data
-
-<br>
-
-```{r}
-#| label: structure
-#| eval: false
-
-glimpse(fight_songs)
-
-```
-
-### Function: summary()
-
-basic descriptive statistics
-
-<br>
-
-```{r}
-#| label: summary statistics
-#| eval: false
-
-
-summary(fight_songs)
-
 ```
 
 ### Function: mean(), median(), sum()
@@ -650,5 +604,6 @@ sd(fight_songs$number_fights)
 ```
 
 <br>
+
 
 ------------------------------------------------------------------------
